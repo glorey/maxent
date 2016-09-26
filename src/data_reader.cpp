@@ -186,12 +186,6 @@ int DataReader::load_file(const char* file_name) {
 
     reader.close();
 
-    ret = merge_events();
-    if (ret != 0) {
-        log_warn("merge event failed.");
-        return -1;
-    }
-
     log_notice("load train file success.");
     return 0;
 }

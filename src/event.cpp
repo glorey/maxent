@@ -70,7 +70,7 @@ bool Event::operator< (const Event& y) const {
 
     if (_contexts.size() < y._contexts.size()) {
         return true;
-    } else {
+    } else if (_contexts.size() > y._contexts.size()) {
         return false;
     }
 

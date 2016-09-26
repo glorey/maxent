@@ -31,11 +31,11 @@ private:
 private:
     int parse_line(std::string line, Event& event, int is_binary);
     int check_binary_feature(const char* file_name);
-    int merge_events();
 
 
 public:
     int load_file(const char* file_name);
+    int merge_events();
     int set_feat_label_map(ItemMap& feat_map, ItemMap& label_map);
 
     inline int feat_num()  { return _feat_map.item_num(); };

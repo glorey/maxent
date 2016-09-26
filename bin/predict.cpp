@@ -13,7 +13,7 @@ using namespace nlu::maxent;
 
 int init_log(const char* proc_name) {
     wanguanglu::log::log_init("log", "maxent");
-    log_debug("Init Log Success");
+    log_notice("Init Log Success");
     return 0;
 }
 

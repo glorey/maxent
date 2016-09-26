@@ -17,6 +17,12 @@ namespace maxent {
 int Trainer::build_param(DataReader& data_reader, LinearModel& linear_model) {
     int ret = 0;
 
+    ret = data_reader.merge_events();
+    if (ret != 0) {
+        log_warn("merge event failed.");
+        return -1;
+    }
+
     ret = linear_model.set_feat_label_map(data_reader._feat_map, data_reader._label_map);
     if (ret != 0) {
         log_warn("set feature & label map failed.");
