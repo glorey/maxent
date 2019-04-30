@@ -15,7 +15,7 @@
 #include <string.h>
 #include <sstream>
 
-#include <logging.h>
+#include <glog.h>
 
 #include "maxent_commons.h"
 #include "item_map.h"

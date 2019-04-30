@@ -6,7 +6,7 @@
 *  
 **/
 
-#include <logging.h>
+#include <glog.h>
 
 #include "item_map.h"
 

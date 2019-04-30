@@ -11,7 +11,7 @@
 
 #include <boost/lexical_cast.hpp>
 
-#include <logging.h>
+#include <glog.h>
 
 #include "data_reader.h"
 

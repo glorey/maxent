@@ -1,13 +1,13 @@
-LOG_PATH   =../../log/output/
+GLOG_PATH  =../../../third/glog/
 BOOST_PATH =../../../local/boost/
 
 INCLUDEDIR= \
 		 -I. \
 		 -I$(BOOST_PATH)/include \
-		 -I$(LOG_PATH)/include \
+		 -I$(GLOG_PATH)/include \
 
 LIBDIR=	\
-		-L$(LOG_PATH)/lib -llog \
+		-L$(GLOG_PATH)/lib -llog \
 		-lpthread -lm -lstdc++
 
 GCC = g++

@@ -12,7 +12,7 @@
 #include <string.h>
 #include <getopt.h>
 
-#include <logging.h>
+#include <glog.h>
 
 #include "data_reader.h"
 #include "maxent.h"
@@ -185,7 +185,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    wanguanglu::log::log_init("log", "maxent");
+    glog_init("maxent", "log", "maxent");
 
     std::string train_file;
     std::string model_file;
